@@ -13,13 +13,13 @@
         overflow: hidden;
         width: 100vw;
         height: 100vh;
-        z-index: -5;
     }
     nav{
         width:15%;
-        height:calc(100% - 5%) ;
+        height:calc(100% - 5%);
         background-color: #363636;
         animation: nav 1s forwards;
+        z-index: 15;
     }
     @keyframes nav {
         from {
@@ -46,29 +46,6 @@
     .menu li span{
         font-size: 1.3vw;
     }
-    .menu li ul{
-        display:none;
-    }
-    .menu li:hover ul{
-        display:block;
-        position: absolute;
-        top:0;
-        left:100%;
-        padding: 0;
-        background: #444;
-        width: 100%;
-        height: 100%;
-        z-index: 5;
-    }
-
-    .menu li ul li a{
-        text-decoration: none;
-        color: #f2f2f2;
-        font-size:1.3vw;
-    }
-    .menu li ul li:hover{
-        background: #555;
-    }
     footer{
         height: 5%;
         background: #2C2C2C;
@@ -87,10 +64,15 @@
     }
     iframe{
         position: absolute;
-        height: 95%;
-        margin-left:15%;
-        width: 85%;
         top:0;
-        z-index: unset;
+        height: 95%;
+        width: 85%;
+        left:15%;
+        border: none;
+    }
+    .linkmenu{
+        color: #f2f2f2;
+        text-decoration: none;
+        display: block;
     }
 }

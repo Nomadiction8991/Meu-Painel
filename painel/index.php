@@ -15,21 +15,12 @@ if (!isset($_SESSION["nome"])) {
 <body>
     <nav>
         <ul class="menu">
-            <li><span>Cadastros</span>
-                <ul class="submenu">
-                    <li><a href="cadastros/usuarios/index.php" target="iframepainel">Usuários</a></li>
-                    <li><a href="cadastros/repositorios/index.php" target="iframepainel">Repositorios</a></li>
-                </ul>
-            </li>
-            <li><span>Configurações</span>
-                <ul class="submenu">
-                    <li><a href="#">Permissões de Usuários</a></li>
-                </ul>
-            </li>
-            <li><span>Sair</span></li>
+            <li><a href="cadastros/index.php" class="linkmenu" target="iframepainel"><span>Cadastros</span></a></li>
+            <li><a href="configuacoes/index.php" class="linkmenu" target="iframepainel"><span>Configurações</span></a></li>
+            <li><a href="sair/acao.php" class="linkmenu" target="iframepainel"><span>Sair</span></a></li>
         </ul>
     </nav>
-    <iframe src="" frameborder="0" name="iframepainel"></iframe>
+    <iframe src="" name="iframepainel"></iframe>
     <footer><img src="../../../icones/account.svg" Alt="Usuario" class="icone"><?php /*echo $nome*/?></footer>
 </body>
 </html>
