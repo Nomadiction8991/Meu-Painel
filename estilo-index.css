@@ -1,0 +1,66 @@
+/*FONTES*/
+@font-face {
+    font-family: 'MadimiOne';
+    src: url('../../fontes/Madimi_One/MadimiOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*TELA MAIOR QUE 1000px*/
+@media screen and (min-width:1000px){
+    body{
+        margin: 0;
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+    }
+    .formulario{
+        background-color: #fff;
+        width: 25%;
+        border-radius: 5px;
+        padding:2.5%;
+        height: 33%;
+        display: flex;
+        flex-direction: column;
+        margin: 12% auto;
+        animation: formulario 1s forwards;
+    }
+    @keyframes formulario {
+        from {
+            transform: translateY(75vh);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    .titulo{
+        color:#333;
+        font-family: 'MadimiOne', sans-serif;
+        font-size: 2vw;
+        margin: 0 auto;
+        margin-bottom: 1vw;
+    }
+    input{
+        outline: none;
+        border:none;
+        border-bottom:1px solid #333;
+        margin: 0.8vw 0;
+        color:#333
+    }
+    input::placeholder{
+        color: #333;
+    }
+    .acessar{
+        border:none;
+        background-color:#2C2C2C;
+        color: #f2f2f2;
+        padding: 0.8vw 0;
+        border-radius:10px;
+        margin-top: 2vw;
+    }
+    .acessar:hover{
+        background-color:#666;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+}
