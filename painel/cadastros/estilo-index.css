@@ -7,9 +7,9 @@
 }
 
 /*TELA MAIOR QUE 1000px*/
-@media screen and (min-width:1000px){
+@media screen and (min-width:800px){
     body{
-        margin: 0;
+        margin: 1vw;
         overflow: hidden;
         width: 100vw;
         height: 100vh;
@@ -21,11 +21,17 @@
     }
     button{
         cursor: pointer;
-        padding: 1vw;
+        padding: 1vw  2vw;
+        padding-left: 4vw;
         background-color: #f2f2f2;
         color: #333;
         border: none;
-        border-radius: 2vw;
+        border-radius: 1vw;
+
+    }
+    button:hover{
+        background-color: #ccc;
+        transition: 0.5s;
     }
     .usuarios{
         animation: usuarios 1s forwards;
@@ -49,5 +55,10 @@
             transform: translateX(0);
         }
     }
-
+    .icone{
+        position: absolute;
+        margin-top: -0.4vw;
+        margin-left: -2.5vw;
+        width: 2vw;
+    }
 }

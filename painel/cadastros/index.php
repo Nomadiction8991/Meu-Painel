@@ -1,11 +1,9 @@
 <?php
-/*
 session_start();
 if (!isset($_SESSION["nome"])) {
     header("Location: ../../../index.php");
     exit;
 }
-*/
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -15,7 +13,7 @@ if (!isset($_SESSION["nome"])) {
     <link rel="stylesheet" href="estilo-index.css">
 </head>
 <body> 
-  <a href="usuarios/index.php"><button class="usuarios">Usuários</button></a>
-  <a href="repositorios/index.php"><button class="repositorios">Repositorios</button></a>
+  <a href="usuarios/index.php"><button class="usuarios"><img src="../../../../icones/user.svg" class="icone">Usuários</button></a>
+  <a href="repositorios/index.php"><button class="repositorios"><img src="../../../../icones/dns.svg" class="icone">Repositorios</button></a>
 </body>
 </html>
