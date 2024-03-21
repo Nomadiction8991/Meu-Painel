@@ -1,0 +1,53 @@
+/*FONTES*/
+@font-face {
+    font-family: 'MadimiOne';
+    src: url('../../../fontes/Madimi_One/MadimiOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*TELA MAIOR QUE 1000px*/
+@media screen and (min-width:1000px){
+    body{
+        margin: 0;
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+    }
+    a{
+        text-decoration: none;
+        font-size: 1.3vw;
+        color: #333;
+    }
+    button{
+        cursor: pointer;
+        padding: 1vw;
+        background-color: #f2f2f2;
+        color: #333;
+        border: none;
+        border-radius: 2vw;
+    }
+    .usuarios{
+        animation: usuarios 1s forwards;
+    }
+    @keyframes usuarios {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .repositorios{
+        animation: repositorios 1s forwards;
+    }
+    @keyframes repositorios {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+}
