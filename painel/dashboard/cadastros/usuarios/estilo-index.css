@@ -13,7 +13,7 @@
     }
     body{
         margin: 1vw;
-        overflow: hidden;
+        overflow-x: hidden;
         width: 100vw;
         height: 100vh;
     }
@@ -27,6 +27,226 @@
         margin: auto;
         font-size: 3vw;
         color: #f2f2f2;
-        text-shadow: 0 0 1vw #ccc;
+        font-family: 'MadimiOne', sans-serif;
+        animation: titulo 1s forwards;
+        margin-bottom: 2vw;
+    }
+    @keyframes titulo {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    input{
+        padding: 1vw;
+        outline: none;
+        background-color: transparent;
+        margin:0.5vw 0;
+        border: none;
+        border-bottom: 1.5px solid #f2f2f2;
+        color: #f2f2f2;
+    }
+    input::placeholder{
+        color: #f2f2f2;
+    }
+    .nome{
+        animation: nome 1s forwards;
+    }
+    @keyframes nome {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .sobrenome{
+        animation: sobrenome 1.25s forwards;
+    }
+    @keyframes sobrenome {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .apelido{
+        animation: apelido 1.5s forwards;
+    }
+    @keyframes apelido {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .empresa{
+        animation: empresa 1.75s forwards;
+    }
+    @keyframes empresa {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .cargo{
+        animation: cargo 2s forwards;
+    }
+    @keyframes cargo {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .departamento{
+        animation: departamento 2.25s forwards;
+    }
+    @keyframes departamento {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .cep{
+        animation: cep 2.5s forwards;
+    }
+    @keyframes cep {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .pais{
+        animation: pais 2.75s forwards;
+    }
+    @keyframes pais {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .endereco{
+        animation: endereco 3s forwards;
+    }
+    @keyframes endereco {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .cidade{
+        animation: cidade 3.25s forwards;
+    }
+    @keyframes cidade {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .estado{
+        animation: estado 3.5s forwards;
+    }
+    @keyframes estado {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .celular{
+        animation: celular 3.75s forwards;
+    }
+    @keyframes celular {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .email{
+        animation: email 4s forwards;
+    }
+    @keyframes email {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .senha{
+        animation: senha 4.25s forwards;
+    }
+    @keyframes senha {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .cadastrar{
+        animation: cadastrar 4.5s forwards;
+        background-color: rgb(27, 117, 27);
+        border-radius: 0.5vw;
+        border: none;
+        font-family: 'MadimiOne', sans-serif;
+        font-size: 1.3vw;
+    }
+    .cadastrar:hover{
+        background-color: rgb(34, 141, 34);
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    @keyframes cadastrar {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .voltar{
+        animation: voltar 4.75s forwards;
+        background-color: transparent;
+        border: none;
+        font-family: 'MadimiOne', sans-serif;
+        font-size: 1.3vw;
+        color: #f2f2f2;
+        margin: 1vw 0;
+    }
+    .voltar:hover{
+        color: #fff;
+        text-shadow: 0 0 0.5vw #fff;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+    @keyframes voltar {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
     }
 }

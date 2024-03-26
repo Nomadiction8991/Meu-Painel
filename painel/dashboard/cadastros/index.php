@@ -14,6 +14,5 @@ if (!isset($_SESSION["nome"])) {
 </head>
 <body> 
   <a href="usuarios/index.php"><button class="usuarios"><img src="../../../icones/user.svg" class="icone">Usuários</button></a>
-  <a href="repositorios/index.php"><button class="repositorios"><img src="../../../icones/dns.svg" class="icone">Repositorios</button></a>
 </body>
 </html>
