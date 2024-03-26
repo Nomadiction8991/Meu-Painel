@@ -11,14 +11,8 @@
         <main class="posicaoconteudo">
             <span class="logomarca">Anvy Sistemas</span>
             <section class="menu">
-                <button class="repositorios">
-                    <a href="repositorios/index.php" target="iframe">
-                        <img src="icones/dns.svg" alt="Acessar Painel">
-                        Repositorios
-                    </a>
-                </button>
                 <button class="acessarpainel">
-                    <a href="repositorios/Meu-Painel/index.php" target="iframe">
+                    <a href="painel/index.php" target="iframe">
                         <img src="icones/passkey.svg" alt="Acessar Painel">
                         Acessar Painel
                     </a>
@@ -26,6 +20,6 @@
             </section>
         </main>
     </header>
-    <iframe name="iframe" src="repositorios/index.php" frameborder="0"></iframe>
+    <iframe name="iframe" src="painel/index.php" frameborder="0"></iframe>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION["nome"])) {
-    header("Location: painel/index.php");
+    header("Location: dashboard/index.php");
 }
 ?>
 <!DOCTYPE html>

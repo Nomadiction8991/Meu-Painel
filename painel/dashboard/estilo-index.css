@@ -1,7 +1,7 @@
 /*FONTES*/
 @font-face {
     font-family: 'MadimiOne';
-    src: url('../../../fontes/Madimi_One/MadimiOne-Regular.ttf') format('truetype');
+    src: url('../../fontes/Madimi_One/MadimiOne-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

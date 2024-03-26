@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($row) {
         $_SESSION["email"] = $row["email"];
         $_SESSION["nome"] = $row["nome"]; 
-        header("Location: painel/index.php");
+        header("Location: dashboard/index.php");
         exit();
     } else {
         header("Location: index.php");
