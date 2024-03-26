@@ -1,7 +1,7 @@
 /*FONTES*/
 @font-face {
     font-family: 'MadimiOne';
-    src: url('../../fontes/Madimi_One/MadimiOne-Regular.ttf') format('truetype');
+    src: url('fontes/Madimi_One/MadimiOne-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -14,53 +14,114 @@
         width: 100vw;
         height: 100vh;
     }
-    .formulario{
-        background-color: #fff;
-        width: 25%;
-        border-radius: 5px;
-        padding:2.5%;
-        height: 33%;
+    .cabecalho{
+        width: 100%;
+        background-color: #2C2C2C;
         display: flex;
-        flex-direction: column;
-        margin: 12% auto;
-        animation: formulario 1s forwards;
+        flex-direction: row;
+        height: 4vw;
     }
-    @keyframes formulario {
+    .posicaoconteudo{
+        display: flex;
+        flex-direction: row;
+        width: 80vw;
+        margin: 0 auto;
+        height: 100%;
+    }
+    .logomarca{
+        color:#f2f2f2;
+        font-family: 'MadimiOne', sans-serif;
+        font-size: 1.8vw;
+        margin: auto 0;
+        animation: logomarca 1s forwards;
+    }
+    @keyframes logomarca {
         from {
-            transform: translateY(75vh);
+            transform: translateX(-30vw);
         }
         to {
-            transform: translateY(0);
+            transform: translateX(0);
         }
     }
-    .titulo{
-        color:#333;
-        font-family: 'MadimiOne', sans-serif;
-        font-size: 2vw;
-        margin: 0 auto;
-        margin-bottom: 1vw;
+    .menu{
+        width: 50%;
+        text-align: right;
+        align-items: right;
+        display: flex;
+        margin-left:auto;
+        justify-content: right; 
     }
-    input{
-        outline: none;
-        border:none;
-        border-bottom:1px solid #333;
-        margin: 0.8vw 0;
-        color:#333
+    .acessarpainel {
+        height: 100%;
+        border: none;
+        background-color: #2C2C2C;
+        width: 30%;
+        animation: acessarpainel 1s forwards;
     }
-    input::placeholder{
-        color: #333;
+    @keyframes acessarpainel {
+        from {
+            transform: translateX(30vw);
+        }
+        to {
+            transform: translateX(0);
+        }
     }
-    .acessar{
-        border:none;
-        background-color:#2C2C2C;
-        color: #f2f2f2;
-        padding: 0.8vw 0;
-        border-radius:10px;
-        margin-top: 2vw;
-    }
-    .acessar:hover{
-        background-color:#666;
+    .acessarpainel:hover{
+        background-color: #383838;
         transition: 0.5s;
-        cursor: pointer;
+    }
+    .acessarpainel a {
+        text-decoration: none;
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        width: 100%;
+        height: 100%;
+        color: #f2f2f2;
+        font-size: 1vw;
+    }
+    .acessarpainel a img{
+        width: 0.5;
+        margin-right: 0.5vw;
+        filter: brightness(0) invert(1) sepia(1) saturate(10000%) hue-rotate(180deg); /* Transforma img Preta em #f2f2f2*/
+    }
+    .repositorios {
+        height: 100%;
+        border: none;
+        background-color: #2C2C2C;
+        width: 25%;
+        animation: repositorios 1s forwards;
+    }
+    @keyframes repositorios {
+        from {
+            transform: translateX(calc(30vw + 30%));
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .repositorios:hover{
+        background-color: #383838;
+        transition: 0.5s;
+    }
+    .repositorios a {
+        text-decoration: none;
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        width: 100%;
+        height: 100%;
+        color: #f2f2f2;
+        font-size: 1vw;
+    }
+    .repositorios a img{
+        width: 0.5;
+        margin-right: 0.5vw;
+        filter: brightness(0) invert(1) sepia(1) saturate(10000%) hue-rotate(180deg); /* Transforma img Preta em #f2f2f2*/
+    }
+    iframe{
+        width: 100%;
+        height: calc(100% - 4vw);
+        background-color: #3D3D3D;
     }
 }

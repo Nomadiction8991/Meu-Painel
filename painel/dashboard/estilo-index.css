@@ -1,0 +1,86 @@
+/*FONTES*/
+@font-face {
+    font-family: 'MadimiOne';
+    src: url('../../../fontes/Madimi_One/MadimiOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*TELA MAIOR QUE 1000px*/
+@media screen and (min-width:1000px){
+    body{
+        margin: 0;
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+    }
+    nav{
+        width:15%;
+        height:calc(100% - 5%);
+        background-color: #363636;
+        animation: nav 1s forwards;
+        z-index: 15;
+    }
+    @keyframes nav {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .menu{
+        width: 100%;
+        height: 100%;
+        margin:0;
+        padding:0;
+        color: #f2f2f2;
+    }
+    .menu li{
+        list-style: none;
+        padding: 5%;
+    }
+    .menu li:hover{
+        background-color: #444;
+    }
+    .menu li span{
+        font-size: 1vw;
+        font-family: sans-serif;
+        margin-left: 2.5vw;
+    }
+    footer{
+        height: 5%;
+        background: #2C2C2C;
+    }
+    .icone{
+        filter: brightness(0) invert(1) sepia(1) saturate(10000%) hue-rotate(180deg);
+    }
+    .iconfooter{
+        animation: icone 1s forwards;
+    }
+    @keyframes icone {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    iframe{
+        position: absolute;
+        top:0;
+        height: 95%;
+        width: 85%;
+        left:15%;
+        border: none;
+    }
+    .linkmenu{
+        color: #f2f2f2;
+        text-decoration: none;
+        display: block;
+    }
+    ul li a img{
+        position: absolute;
+        margin-top:-0.2vw;
+    }
+}
