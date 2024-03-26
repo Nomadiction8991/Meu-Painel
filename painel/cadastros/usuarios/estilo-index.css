@@ -1,0 +1,32 @@
+/*FONTES*/
+@font-face {
+    font-family: 'MadimiOne';
+    src: url('../../../fontes/Madimi_One/MadimiOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*TELA MAIOR QUE 1000px*/
+@media screen and (min-width:800px){
+    *{
+        font-family: sans-serif;
+    }
+    body{
+        margin: 1vw;
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+    }
+    form{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .titulo{
+        margin: auto;
+        font-size: 3vw;
+        color: #f2f2f2;
+        text-shadow: 0 0 1vw #ccc;
+    }
+}

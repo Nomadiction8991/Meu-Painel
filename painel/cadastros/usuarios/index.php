@@ -31,6 +31,8 @@ if (!isset($_SESSION["nome"])) {
         <input type="email"  class="email" name="email" placeholder="E-mail"  required>
         <input type="password" class="senha" name="senha" placeholder="Senha"  required>
         <input type="submit" class="acessar" value="Acessar">
+        <input type="reset" class="resetar" value="Limpar">
     </form>
+    <a href="../index.php" target="iframepainel"><button class="voltar">Voltar</button></a>
 </body>
 </html>
